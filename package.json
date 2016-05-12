@@ -4,7 +4,7 @@
   "description": "Angular Express seed application ",
   "main": "server.js",
   "directories": {
-    "test": "test"
+    
   },
   "scripts": {
     "postinstall": "bower install"
