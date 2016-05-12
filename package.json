@@ -2,11 +2,12 @@
   "name": "myseed",
   "version": "0.0.1",
   "description": "Angular Express seed application ",
-  "main": "server.js",
-  "directories": {
-    
+  "engines": {
+    "node": "5.9.1"
   },
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "postinstall": "bower install"
   },
   "author": "",
