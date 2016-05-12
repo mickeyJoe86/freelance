@@ -1,0 +1,23 @@
+{
+  "name": "myseed",
+  "description": "Angular Express seed application",
+  "main": "server.js",
+  "authors": [
+    "Mike Ward <ward.michael51@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mickeyJoe86/freelance",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "bootstrap": "^3.3.6"
+  }
+}
