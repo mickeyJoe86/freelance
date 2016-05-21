@@ -6,15 +6,15 @@
 
 html, body {
 	height: 100%;
-}
+	p;
 
-p {
+{
 	font-size: 20px;
 }
 
-	p.small {
-		font-size: 16px;
-	}
+p.small {
+	font-size: 16px;
+}
 
 a,
 a:hover,
@@ -109,6 +109,7 @@ header {
 		font-weight: 300;
 	}
 
+.about-description,
 .dev-profile {
 	text-align: center;
 }
@@ -458,4 +459,62 @@ footer {
 .portfolio-modal .modal-backdrop {
 	display: none;
 	opacity: 0;
+}
+
+/*   skill bar*/
+
+.skillbar {
+	position: relative;
+	display: block;
+	margin-bottom: 60px;
+	width: 100%;
+	-webkit-transition: 0.4s linear;
+	-moz-transition: 0.4s linear;
+	-ms-transition: 0.4s linear;
+	-o-transition: 0.4s linear;
+	transition: 0.4s linear;
+	-webkit-transition-property: width, background-color;
+	-moz-transition-property: width, background-color;
+	-ms-transition-property: width, background-color;
+	-o-transition-property: width, background-color;
+	transition-property: width, background-color;
+}
+
+	.skillbar p {
+		font-size: 14px;
+		text-align: left;
+		margin-top: 26px;
+	}
+
+.skillbar-background {
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	height: 10px;
+	background: #eee;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.skillbar-bar {
+	position: absolute;
+	height: 10px;
+	background: #18bc9c;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.skill-bar-percent {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	font-size: 11px;
+	height: 35px;
+	line-height: 35px;
+	color: rgba(0, 0, 0, 0.4);
 }
