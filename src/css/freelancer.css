@@ -400,7 +400,7 @@ footer {
 .scroll-top {
 	z-index: 1049;
 	position: fixed;
-	right: 2%;
+	right: 5%;
 	bottom: 2%;
 	width: 50px;
 	height: 50px;
@@ -417,6 +417,16 @@ footer {
 		.scroll-top .btn:focus {
 			outline: 0;
 		}
+
+.scroll-btn-color {
+	background-color: #2c3e50;
+}
+
+	.scroll-btn-color:hover {
+		background-color: #18bc9c;
+		/*#204d74
+			#286090*/
+	}
 
 .portfolio-modal {
 	padding-left: 0px !important;
