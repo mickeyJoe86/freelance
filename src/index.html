@@ -31,7 +31,7 @@
 	<!--Angular Services -->
 </head>
 
-<body ng-controller="mainCtrl" id="page-top" class="index">
+<body ng-controller="mainCtrl" id="page-top" class="index" onload="main()">
 
 	<!-- -------NAVIGATION----- -->
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -71,6 +71,8 @@
 
 	<!---------- HEADER ----- -->
 	<header>
+		<!--<canvas id="particles" width="200" height="165"></canvas>-->
+		<canvas id="canvas1"></canvas>
 		<div class="container">
 			<div class="intro-text">
 				<span class="name">Compiler Lab.</span>
@@ -113,6 +115,7 @@
 		</div>
 	</section>
 	<!---------- ABOUT SECTION ----------->
+	<!-- Boucing-->
 	<section class="success" id="about">
 		<div class="container">
 			<div class="row">
@@ -126,23 +129,30 @@
 					<p>We've got what you need! We are freelancers and we are all about helping small business to improve their profits and marketing by devloping websites and applications.</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="dev-profile">
-						<img src="img/developers/maria.jpg" class="img-circle" alt="">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</div>
+		<!-- Developers Description -->
+		<div class="container cf">
+			<div class="animation-element bounce-up cf">
+				<div class="subject development">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="dev-profile">
+								<img src="img/developers/maria.jpg" class="img-circle" alt="">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="dev-profile">
+								<img src="img/developers/mike.jpg" class="img-circle" alt="">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+						</div>
+						<div class="col-lg-8 col-lg-offset-2 text-center">
+							<a href="#skills-modal" class="skills-modal btn btn-lg btn-outline portfolio-link" data-toggle="modal">
+								<i class="fa fa-code"></i> Skills
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="dev-profile">
-						<img src="img/developers/mike.jpg" class="img-circle" alt="">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-					</div>
-				</div>
-				<div class="col-lg-8 col-lg-offset-2 text-center">
-					<a href="#skills-modal" class="skills-modal btn btn-lg btn-outline portfolio-link" data-toggle="modal">
-						<i class="fa fa-code"></i> Skills
-					</a>
 				</div>
 			</div>
 		</div>
