@@ -65,42 +65,42 @@ $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
 /////////////////FLYING DOTS
-var Vector = function (x, y) {
-	this.x = x;
-	this.y = y;
+//var Vector = function (x, y) {
+//	this.x = x;
+//	this.y = y;
 
-	this.sub = function (other) {
-		return new Vector(
-						this.x - other.x,
-						this.y - other.y
-		);
-	}
-	this.isub = function (other) {
-		this.x -= other.x;
-		this.y -= other.y;
-	}
-	this.iadd = function (other) {
-		this.x += other.x;
-		this.y += other.y;
-	}
-	this.length = function () {
-		return Math.sqrt(this.x * this.x + this.y * this.y);
-	}
-	this.idiv = function (scalar) {
-		this.x /= scalar;
-		this.y /= scalar;
-	}
-	this.zero = function () {
-		this.x = 0;
-		this.y = 0;
-	}
-	this.validate = function () {
-		if (isNaN(this.x + this.y)) {
-			this.x = 0;
-			this.y = 0;
-		}
-	}
-}
+//	this.sub = function (other) {
+//		return new Vector(
+//						this.x - other.x,
+//						this.y - other.y
+//		);
+//	}
+//	this.isub = function (other) {
+//		this.x -= other.x;
+//		this.y -= other.y;
+//	}
+//	this.iadd = function (other) {
+//		this.x += other.x;
+//		this.y += other.y;
+//	}
+//	this.length = function () {
+//		return Math.sqrt(this.x * this.x + this.y * this.y);
+//	}
+//	this.idiv = function (scalar) {
+//		this.x /= scalar;
+//		this.y /= scalar;
+//	}
+//	this.zero = function () {
+//		this.x = 0;
+//		this.y = 0;
+//	}
+//	this.validate = function () {
+//		if (isNaN(this.x + this.y)) {
+//			this.x = 0;
+//			this.y = 0;
+//		}
+//	}
+//}
 
 //var Particle = function (canvas) {
 //	var initial_speed = 1;
@@ -115,7 +115,6 @@ var Vector = function (x, y) {
 //	this.position = new Vector(
 //					Math.random() * canvas.width,
 //					Math.random() * canvas.height
-
 //	)
 
 //	this.step = function () {
@@ -203,7 +202,7 @@ var Vector = function (x, y) {
 //	var system = new System(15, 40);
 //};
 
-//FLYING CIRCLES
+///////////////////////////FLYING CIRCLES
 var circles = [],
     canvas = document.getElementById("canvas1"),
     context = canvas.getContext("2d"),
@@ -342,3 +341,61 @@ window.onresize = function () {
 	//buildArray();
 	animate();
 };
+
+///////////////////Services steps animation
+$("#showr").click(function () {
+	$(".container-animation div").first().show("slow", function showNext() {
+		$(this).next(".container-animation div").show("slow", showNext);
+		$(this).next("#hidr").show();
+		$("#hidr ").click(function () {
+			$(".container-animation div").hide(1000);
+			$('#hidr').hide();
+		});
+	});
+});
+
+$(" #showr-two ").click(function () {
+	$(".container-animation-two div").first().show("slow", function showNext() {
+		$(this).next(".container-animation-two div").show("slow", showNext);
+		$(this).next(" #hidr-two").show();
+		$(" #hidr-two ").click(function () {
+			$(".container-animation-two div").hide(1000);
+			$(' #hidr-two').hide();
+		});
+	});
+});
+
+$(" #showr-three ").click(function () {
+	$(".container-animation-three div").first().show("slow", function showNext() {
+		$(this).next(".container-animation-three div").show("slow", showNext);
+		$(this).next(" #hidr-three").show();
+		$(" #hidr-three ").click(function () {
+			$(".container-animation-three div").hide(1000);
+			$(' #hidr-three').hide();
+		});
+	});
+});
+
+$(" #showr-four ").click(function () {
+	$(".container-animation-four div").first().show("slow", function showNext() {
+		$(this).next(".container-animation-four div").show("slow", showNext);
+		$(this).next(" #hidr-four").show();
+		$(" #hidr-four ").click(function () {
+			$(".container-animation-four div").hide(1000);
+			$(' #hidr-four').hide();
+		});
+	});
+});
+
+$(" #showr-five ").click(function () {
+	$(".container-animation-five div").first().show("slow", function showNext() {
+		$(this).next(".container-animation-five div").show("slow", showNext);
+		$(this).next(" #hidr-five").show();
+		$(" #hidr-five ").click(function () {
+			$(".container-animation-five div").hide(1000);
+			$(' #hidr-five').hide();
+		});
+	});
+});
+
+if ($(window).width() < 760) { }

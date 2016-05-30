@@ -199,6 +199,9 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+				<a href="#services-modal" class="btn btn-lg btn-outline-reverse portfolio-link" data-toggle="modal"> More Info</a>
+			</div>
 		</div>
 	</section>
 
@@ -319,24 +322,18 @@
 							<h2>Project Forecastr</h2>
 							<hr class="star-primary">
 							<img src="img/portfolio/Forecastrlg.PNG" class="img-responsive img-centered" alt="">
-							<p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+							<p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="http://forecastr-beta.herokuapp.com/" target="_blank">Forecastr-Beta</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
 							<ul class="list-inline item-details">
-								<li>
-									Client:
-									<strong>
-										<a href="http://startbootstrap.com">Start Bootstrap</a>
-									</strong>
-								</li>
 								<li>
 									Date:
 									<strong>
-										<a href="http://startbootstrap.com">April 2014</a>
+										<a href="#">April 2014</a>
 									</strong>
 								</li>
 								<li>
 									Service:
 									<strong>
-										<a href="http://startbootstrap.com">Web Development</a>
+										<a href="index.html#services">Compiler Pro</a>
 									</strong>
 								</li>
 							</ul>
@@ -362,18 +359,18 @@
 							<h2>Project BookListx</h2>
 							<hr class="star-primary">
 							<img src="img/portfolio/Booklistxlg.PNG" class="img-responsive img-centered" alt="">
-							<p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+							<p>BookListx is a website to keep track of books users read and wish to read. Try it out - <a href="http://booklistx.apphb.com/" target="_blank">BookListx</a>.</p>
 							<ul class="list-inline item-details">
 								<li>
 									Date:
 									<strong>
-										<a href="http://startbootstrap.com">March 2016</a>
+										<a href="#">March 2016</a>
 									</strong>
 								</li>
 								<li>
 									Service:
 									<strong>
-										<a href="http://startbootstrap.com">Web Development</a>
+										<a href="index.html#services">Compiler Pro</a>
 									</strong>
 								</li>
 							</ul>
@@ -384,6 +381,7 @@
 			</div>
 		</div>
 	</div>
+	<!-------Skills Modals-->
 	<div class="portfolio-modal modal fade" id="skills-modal" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-content">
 			<div class="close-modal" data-dismiss="modal">
@@ -549,39 +547,218 @@
 		</div>
 	</div>
 
-	<!---------------SCRIPTS GO HERE-------------->
-	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<!-------Services Modals-->
+	<div class="portfolio-modal modal fade" id="services-modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="modal-body">
+							<h2>Services</h2>
+							<hr class="star-primary">
+							<div class="row">
+								<div class="col-lg-12 ">
+									<div class="row">
+										<div class="col-lg-4">
+											<button id="showr" class="btn btn-color btn-lg ">Compiler Pro Plus</button>
+											<div class="container-animation">
+												<div class="service-options">
+													<i class="fa fa-2x  fa-file-image-o icon-color"></i>
+													<p>Design</p>
+												</div>
 
-	<!-- jQuery -->
-	<script src="js/jquery.js"></script>
-	<!-- Bootstrap Core JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
+												<div class="arrow">
+													<i class="fa fa-2x fa-long-arrow-right icon-color"></i>
+												</div>
 
-	<script>
-		jQuery('.skills-modal').on("click", function () {
-			jQuery('.skillbar').each(function () {
-				jQuery(this).find('.skillbar-bar').animate({
-					width: jQuery(this).attr('data-percent')
-				}, 6000);
-			})
-		});
-	</script>
+												<div class="service-options">
+													<i class="fa fa-2x  fa-cogs icon-color"></i>
+													<p>Build - WordPress</p>
+												</div>
 
-	<!-- Custom Theme JavaScript -->
-	<script src="js/freelancer.js"></script>
+												<div class="arrow">
+													<i class="fa fa-2x fa-long-arrow-right icon-color"></i>
+												</div>
 
-	<!-- Plugin JavaScript -->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	<script src="js/classie.js"></script>
-	<script src="js/cbpAnimatedHeader.js"></script>
+												<div class="service-options">
+													<i class="fa fa-2x fa-cloud-upload icon-color"></i>
+													<p>Launch</p>
+												</div>
+												<i class="fa fa-1x fa-times icon-color" id="hidr"></i>
+											</div>
+										</div>
 
-	<!-- Contact Form JavaScript -->
-	<script src="js/jqBootstrapValidation.js"></script>
-	<script src="js/contact_me.js"></script>
+										<div class="col-lg-4">
+											<button id="showr-two" class="btn btn-color btn-lg">Compiler Pro </button>
+											<div class="container-animation-two">
 
-	<!-- Custom Theme Angular -->
-	<script src="vendor/jquery/dist/jquery.min.js"></script>
-	<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+												<div class="service-options">
+													<i class="fa fa-2x  fa-file-image-o icon-color"></i>
+													<p>Design</p>
+												</div>
+
+												<div class="arrow">
+													<i class="fa fa-2x fa-long-arrow-right icon-color"></i>
+												</div>
+
+												<div class="service-options">
+													<i class="fa fa-2x  fa-cogs icon-color"></i>
+													<p>Build - No WordPress</p>
+												</div>
+
+												<div class="arrow">
+													<i class="fa fa-2x fa-long-arrow-right icon-color"></i>
+												</div>
+
+												<div class="service-options">
+													<i class="fa fa-2x fa-cloud-upload icon-color"></i>
+													<p>Launch</p>
+												</div>
+												<i class="fa fa-1x fa-times icon-color" id="hidr-two"></i>
+											</div>
+										</div>
+
+										<div class="col-lg-4">
+											<button id="showr-three" class="btn btn-color btn-lg">Compiler Semi-Pro </button>
+											<div class="container-animation-three">
+
+												<div class="service-options">
+													<i class="fa fa-2x fa-ban icon-color"></i>
+													<p> No Design </p>
+												</div>
+
+												<div class="arrow">
+													<i class="fa fa-2x fa-long-arrow-right icon-color"></i>
+												</div>
+
+												<div class="service-options">
+													<i class="fa fa-2x  fa-cogs icon-color"></i>
+													<p>Build - No WordPress</p>
+												</div>
+
+												<div class="arrow">
+													<i class="fa fa-2x fa-long-arrow-right icon-color"></i>
+												</div>
+
+												<div class="service-options">
+													<i class="fa fa-3x fa-cloud-upload icon-color"></i>
+													<p>Launch</p>
+												</div>
+												<i class="fa fa-1x fa-times icon-color" id="hidr-three"></i>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+
+										<div class="col-lg-4 col-lg-offset-2">
+											<button id="showr-four" class="btn btn-color btn-lg">Compiler UX </button>
+											<div class="container-animation-four">
+
+												<div class="service-options">
+													<i class="fa fa-2x  fa-file-image-o icon-color"></i>
+													<p>Design</p>
+												</div>
+
+												<div class="arrow">
+													<i class="fa fa-2x fa-long-arrow-right icon-color"></i>
+												</div>
+
+												<div class="service-options">
+													<i class="fa fa-2x  fa-ban icon-color"></i>
+													<p> No Build </p>
+												</div>
+
+												<div class="arrow">
+													<i class="fa fa-2x fa-long-arrow-right icon-color"></i>
+												</div>
+
+												<div class="service-options">
+													<i class="fa fa-2x fa-ban icon-color"></i>
+													<p> No Launch </p>
+												</div>
+												<i class="fa fa-1x fa-times icon-color" id="hidr-four"></i>
+											</div>
+										</div>
+
+										<div class="col-lg-4">
+											<button id="showr-five" class="btn btn-color btn-lg">Compiler Cloud </button>
+											<div class="container-animation-five">
+
+												<div class="service-options">
+													<i class="fa fa-2x  fa-ban icon-color"></i>
+													<p> No Design </p>
+												</div>
+
+												<div class="arrow">
+													<i class="fa fa-2x fa-long-arrow-right icon-color"></i>
+												</div>
+
+												<div class="service-options">
+													<i class="fa fa-2x  fa-ban icon-color"></i>
+													<p> No Build </p>
+												</div>
+
+												<div class="arrow">
+													<i class="fa fa-2x fa-long-arrow-right icon-color"></i>
+												</div>
+
+												<div class="service-options">
+													<i class="fa fa-2x fa-cloud-upload icon-color"></i>
+													<p>Launch</p>
+												</div>
+												<i class="fa fa-1x fa-times icon-color" id="hidr-five"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="close-btn-services"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
+			</div>
+		</div>
+
+		<!---------------SCRIPTS GO HERE-------------->
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<script>
+			jQuery('.skills-modal').on("click", function () {
+				jQuery('.skillbar').each(function () {
+					jQuery(this).find('.skillbar-bar').animate({
+						width: jQuery(this).attr('data-percent')
+					}, 6000);
+				})
+			});
+		</script>
+
+		<!-- Custom Theme JavaScript -->
+		<script src="js/freelancer.js"></script>
+
+		<!-- Plugin JavaScript -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/cbpAnimatedHeader.js"></script>
+
+		<!-- Contact Form JavaScript -->
+		<script src="js/jqBootstrapValidation.js"></script>
+		<script src="js/contact_me.js"></script>
+
+		<!-- Custom Theme Angular -->
+		<script src="vendor/jquery/dist/jquery.min.js"></script>
+		<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
