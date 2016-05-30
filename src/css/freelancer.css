@@ -630,6 +630,7 @@ footer {
 #showr, #showr-two, #showr-three, #showr-four, #showr-five {
 	margin: 30px;
 	width: 179px;
+	line-height: 3.3em;
 }
 
 #hidr, #hidr-two, #hidr-three, #hidr-four, #hidr-five {
