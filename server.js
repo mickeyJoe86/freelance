@@ -1,13 +1,44 @@
-var  express = require("express");
+var  express     = require("express"),
+     nodemailer  = require("nodemailer"), 
+     bodyParser  = require("body-parser"),
+     transporter = nodemailer.createTransport(smtpConfig);
+     
+var smtpConfig = {
+    service: 'Zoho',
+    auth: {
+        user: 'mike.ward@compiler-lab.com',
+        pass: '#Goldenage1'
+    }
+}  
+   
 var app = express();
 
+app.set('port', (process.env.PORT || 5000));
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 app.use(express.static(__dirname + '/src'));
 
-app.get('*', function(req,res) {
+
+//**** Routes ****
+app.get('/', function(req,res) {
     res.sendFile(__dirname + '/index.html');
 });
 
-app.set('port', (process.env.PORT || 5000));
+app.post('/contact', function(req, res){
+  var data = req.body;
+  console.log("From: " + data.email)
+  transporter.sendMail({
+    from: data.name + '<' + data.email + '>',
+    to: 'mike.ward@compiler-lab.com',
+    subject: 'CONTACT: From Compiler-Lab',
+    text: data.formBody
+    
+  }, function(){
+    console.log("-----success-----");
+    res.send({ redirect: '/' });
+  });
+  
+});
 
 app.listen(app.get('port'), function() {
   console.log('App is running on port', app.get('port'));
