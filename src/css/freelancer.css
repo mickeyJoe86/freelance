@@ -302,6 +302,24 @@ section {
 		background: #fff;
 	}
 
+.btn-outline-reverse {
+	margin-top: 89px;
+	border: solid 2px #18bc9c;
+	font-size: 20px;
+	color: #2c3e50;
+	background: 0 0;
+	transition: all .3s ease-in-out;
+}
+
+	.btn-outline-reverse:hover,
+	.btn-outline-reverse:focus,
+	.btn-outline-reverse:active,
+	.btn-outline-reverse.active {
+		border: solid 2px #2c3e50;
+		color: #18bc9c;
+		background: #2c3e50;
+	}
+
 .floating-label-form-group {
 	position: relative;
 	margin-bottom: 0;
@@ -605,4 +623,50 @@ footer {
 #canvas1 {
 	width: 100vw;
 	height: 100vh;
+}
+
+/************SERVICES STEPS ANIMATION*/
+
+#showr, #showr-two, #showr-three, #showr-four, #showr-five {
+	margin: 30px;
+	width: 179px;
+	line-height: 3.3em;
+}
+
+#hidr, #hidr-two, #hidr-three, #hidr-four, #hidr-five {
+	display: none;
+}
+
+.container-animation div, .container-animation-two div, .container-animation-three div, .container-animation-four div, .container-animation-five div {
+	margin: 3px;
+	width: 100%;
+	display: none;
+	text-align: center;
+}
+
+.arrow i {
+	display: none;
+}
+
+@media(min-width:767px) {
+	#showr, #showr-two, #showr-three, #showr-four, #showr-five {
+		margin-top: 80px;
+	}
+
+	.container-animation div, .container-animation-two div, .container-animation-three div, .container-animation-four div, .container-animation-five div {
+		width: 16%;
+		float: left;
+	}
+
+	.service-options p {
+		font-size: 12px;
+	}
+
+	.arrow i {
+		display: block;
+	}
+
+	.close-btn-services {
+		display: none;
+	}
 }
