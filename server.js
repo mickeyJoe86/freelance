@@ -4,7 +4,9 @@ var  express     = require("express"),
      transporter = nodemailer.createTransport(smtpConfig);
      
 var smtpConfig = {
-    service: 'Zoho',
+    host: 'smtp.zoho.com',
+    port: 465, 
+    secure: true,
     auth: {
         user: 'mike.ward@compiler-lab.com',
         pass: '#Goldenage1'
