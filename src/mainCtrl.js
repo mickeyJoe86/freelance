@@ -8,7 +8,10 @@
         $scope.cf = {};
         
         $scope.submitForm = function() {
-            $http.post('/contact', $scope.cf);
+            $http.post('/contact', $scope.cf).then(function(data){
+                $scope.cf = {};
+                
+            });
         }
         
     }]);
