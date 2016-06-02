@@ -8,8 +8,8 @@ var smtpConfig = {
     port: 465, 
     secure: true,
     auth: {
-        user: 'mike.ward@compiler-lab.com',
-        pass: '#Goldenage1'
+        user: process.env.USERMAIL,
+        pass: process.env.USERPASS
     }
 }  
    
