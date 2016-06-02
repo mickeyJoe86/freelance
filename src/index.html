@@ -28,46 +28,15 @@
 	<script src="app.js"></script>
 	<!--Angular Controllers -->
 	<script src="mainCtrl.js"></script>
-	<!--Angular Services -->
+	<script src="navCtrl.js"></script>
+	<!--Angular Directives -->
+	<script src="directives/navDirective.js"></script>
 </head>
 
 <body ng-controller="mainCtrl" id="page-top" class="index" onload="main()">
 
 	<!-- -------NAVIGATION----- -->
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<!-- Brand and toggle -->
-			<div class="navbar-header page-scroll">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#page-top">Compiler Lab</a>
-			</div>
-			<!-- Nav links -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="hidden">
-						<a href="#page-top"></a>
-					</li>
-					<li class="page-scroll">
-						<a href="#portfolio">Portfolio</a>
-					</li>
-					<li class="page-scroll">
-						<a href="#about">About</a>
-					</li>
-					<li class="page-scroll">
-						<a href="#services">Services</a>
-					</li>
-					<li class="page-scroll">
-						<a href="#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<compiler-directive></compiler-directive>
 
 	<!---------- HEADER ----- -->
 	<header>
@@ -729,12 +698,11 @@
 		<!---------------SCRIPTS GO HERE-------------->
 		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
 		<!-- jQuery -->
-		<script src="js/jquery.js"></script>
+		<!--<script src="js/jquery.js"></script>-->
 		<!-- Bootstrap Core JavaScript -->
-		<script src="js/bootstrap.min.js"></script>
-
+		<!--<script src="js/bootstrap.min.js"></script>-->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 		<script>
 			jQuery('.skills-modal').on("click", function () {
 				jQuery('.skillbar').each(function () {
@@ -744,21 +712,13 @@
 				})
 			});
 		</script>
-
-		<!-- Custom Theme JavaScript -->
-		<script src="js/freelancer.js"></script>
-
 		<!-- Plugin JavaScript -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/cbpAnimatedHeader.js"></script>
-
 		<!-- Contact Form JavaScript -->
 		<script src="js/jqBootstrapValidation.js"></script>
 		<script src="js/contact_me.js"></script>
-
-		<!-- Custom Theme Angular -->
-		<script src="vendor/jquery/dist/jquery.min.js"></script>
-		<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- Custom Theme JavaScript -->
+		<script src="js/freelancer.js"></script>
 </body>
 </html>
