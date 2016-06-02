@@ -9,7 +9,7 @@ var smtpConfig = {
     secure: true,
     auth: {
         user: process.env.USERMAIL,
-        pass: process.env.USERPASS
+        pass: process.env.USERMAIL
     }
 }  
    
@@ -31,7 +31,7 @@ app.post('/contact', function(req, res){
   console.log("From: " + data.email)
   transporter.sendMail({
     from: data.name + '<' + data.email + '>',
-    to: process.env.USERMAIL,
+    to: 'mike.ward@compiler-lab.com',
     subject: 'CONTACT: From Compiler-Lab',
     text: data.formBody
     
