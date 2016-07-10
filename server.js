@@ -31,7 +31,7 @@ app.post('/contact', function(req, res){
   console.log("From: " + data.email)
   transporter.sendMail({
     from: data.name + '<' + data.email + '>',
-    to: 'mike.ward@compiler-lab.com',
+    to: 'contact@compiler-lab.com',
     subject: 'CONTACT: From Compiler-Lab',
     text: data.formBody
     
