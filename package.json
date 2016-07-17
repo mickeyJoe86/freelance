@@ -21,6 +21,8 @@
     "body-parser": "^1.15.1",
     "bower": "~1.7.7",
     "express": "^4.13.3",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0",
     "nodemailer": "^2.4.2"
   }
 }

@@ -314,3 +314,7 @@ $("#maria-profile").click(function () {
 $("#mike-profile").click(function () {
 	$(".mike-description").slideToggle();
 });
+
+$(document).on('click', '.navbar-collapse a', function(){
+	$(".navbar-collapse").collapse('hide');
+});
