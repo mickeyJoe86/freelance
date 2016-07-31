@@ -11,12 +11,13 @@
         
         $scope.submitForm = function() {
             if($scope.cf.name && $scope.cf.email && $scope.cf.email && $scope.cf.formBody) {
-                $scope.cf.successMessage = true;
+                
                 $http.post('/contact', $scope.cf).then(function(){
                     $scope.cf = {};
+                    $scope.cf.successMessage = true;
                 }, function() {
-                    $scope.cf.failureMessage = true;
                     $scope.cf = {};
+                    $scope.cf.failureMessage = true;
                 });
             } else {
                 //Add validation messages
