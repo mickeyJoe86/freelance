@@ -219,7 +219,10 @@
 							</div>
 						</div>
 						<br>
-						<div id="success"></div>
+						<div id="success">
+							<div class="alert alert-success" ng-show="cf.successMessage"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button><strong>Your message has been sent</strong></div>
+							<div class="alert alert-danger" ng-show="cf.failureMessage"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button><strong>There was an error sending your message.  Please try again later.</strong></div>
+						</div>
 						<div class="row">
 							<div class="form-group col-xs-12">
 								<button type="submit" class="btn btn-color btn-lg">Send</button>

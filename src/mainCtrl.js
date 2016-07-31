@@ -8,9 +8,17 @@
         $scope.cf = {};
         
         $scope.submitForm = function() {
-            $http.post('/contact', $scope.cf).then(function(){
-                $scope.cf = {};
-            });
+            if($scope.cf.name && $scope.cf.email && $scope.cf.email && $scope.cf.formBody) {
+                $http.post('/contact', $scope.cf).then(function(){
+                    $scope.cf.successMessage = true;
+                    $scope.cf = {};
+                }, function() {
+                    $scope.cf.failureMessage = true;
+                    $scope.cf = {};
+                });
+            } else {
+                //Add validation messages
+            }
         }
         
     }]);
