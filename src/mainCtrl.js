@@ -16,7 +16,8 @@
             if($scope.cf.name && $scope.cf.email && $scope.cf.email && $scope.cf.formBody) {
                 $http.post('/contact', $scope.cf).then(function(){
                     $scope.cf = {};
-                    $scope.validation.successMessage = true
+                    $scope.validation.successMessage = true;
+                    $scope.validation.false;
                     
                 }, function() {
                     $scope.cf = {};
