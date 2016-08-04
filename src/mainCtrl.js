@@ -17,7 +17,7 @@
                 $http.post('/contact', $scope.cf).then(function(){
                     $scope.cf = {};
                     $scope.validation.successMessage = true;
-                    $scope.validation.false;
+                    $scope.validation.submitted = false;
                     
                 }, function() {
                     $scope.cf = {};
