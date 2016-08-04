@@ -8,20 +8,22 @@
         $scope.cf = {};
         $scope.validation = {
             successMessage: false,
-            failureMessage: false
+            failureMessage: false,
+            submitted: false
         };
         
         $scope.submitForm = function() {
             if($scope.cf.name && $scope.cf.email && $scope.cf.email && $scope.cf.formBody) {
                 $http.post('/contact', $scope.cf).then(function(){
                     $scope.cf = {};
-                    $scope.validation.successMessage = true;
+                    $scope.validation.successMessage = true
+                    
                 }, function() {
                     $scope.cf = {};
                     $scope.validation.failureMessage = true;
                 });
             } else {
-                //Add validation messages
+                $scope.validation.submitted = true;
             }
         }
         

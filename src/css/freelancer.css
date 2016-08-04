@@ -606,3 +606,7 @@ footer .footer-below {
     display: none;
   }
 }
+
+.help-block {
+  color: #a94442;
+}
